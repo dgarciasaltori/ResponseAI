@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas</title>
+</head>
+<body>
+    <h1>Perguntas e Respostas</h1>
+    <form action="/pergunta">
+        <label for="question">Faça sua pergunta:</label>
+        <input type="text" id="question" name="q">
+        <button type="submit">Enviar</button>
+    </form>
+    {% if answer %}
+    <h2>Resposta:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
+
+</body>
+</html>

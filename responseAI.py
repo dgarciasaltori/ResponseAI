@@ -3,17 +3,6 @@ from halo import Halo
 
 openai.api_key = "API-KEY"
 
-print("##################################################################################")
-print("#                       Code by: Diego Garcia Saltori                            #")
-print("#                       UTF-8                                                    #")
-print("#                       Lang: PT-BR                                              #")
-print("#                       Version: 1.0                                             #")
-print("##################################################################################")
-print("#                     Estudo sobre Inteligencia Artifical                        #")
-print("#                     Integrando a aplicação a API da OpenAI                     #")
-print("##################################################################################")
-
-
 def get_answer(question):
     prompt = (f"Q: {question}\nA:")
     with Halo(text='Gerando resposta', spinner='dots'):
